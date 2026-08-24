@@ -150,7 +150,7 @@ export const SERVICES: Service[] = [
     ],
     cta: "Explore Coworking",
     image: coworkImg,
-    alt: "Coworking area at Befitting Hub with wood desks, ergonomic chairs and natural daylight",
+    alt: "Private office desk at Befitting Hub with ergonomic chairs and bright lighting",
   },
 ];
 
