@@ -23,7 +23,7 @@ export function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-surface/75 md:bg-gradient-to-r md:from-surface/92 md:via-surface/78 md:to-surface/30"
+        className="absolute inset-0 -z-10 bg-surface/60 md:bg-gradient-to-r md:from-surface/85 md:via-surface/55 md:to-surface/15"
       />
 
       <div className="container-hub flex min-h-[88svh] max-h-[920px] flex-col justify-center py-20 md:py-28">
