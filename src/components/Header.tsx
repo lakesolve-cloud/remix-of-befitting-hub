@@ -33,7 +33,7 @@ export function Header() {
       )}
     >
       <div className="container-hub flex h-18 items-center justify-between gap-6 py-3">
-        <Logo />
+        <Logo imageClassName="h-12" />
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">
