@@ -7,6 +7,8 @@ import galleryMeeting from "@/assets/gallery-meeting.jpg";
 import galleryWorkstation from "@/assets/gallery-workstation.jpg";
 import galleryLounge from "@/assets/gallery-lounge.jpg";
 import heroImg from "@/assets/hero-exam-hall.jpg";
+import idpLogoAsset from "@/assets/idp-logo.png.asset.json";
+import ieltsLogoAsset from "@/assets/ielts-logo.png.asset.json";
 
 /**
  * Central content source. Replace placeholder values (marked TODO) with real
