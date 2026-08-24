@@ -177,7 +177,7 @@ export const LOCATIONS: Location[] = [
     id: "yaba",
     name: "Befitting Hub Yaba",
     city: "Yaba, Lagos",
-    address: "Address to be confirmed — Yaba, Lagos, Nigeria", // TODO
+    address: "232, Murtala Muhammed Way, Yaba, Lagos, Nigeria",
     hours: "Opening hours to be confirmed", // TODO
     services: ["Examination centre", "Coworking space", "Training areas"],
     highlights: [
@@ -188,7 +188,8 @@ export const LOCATIONS: Location[] = [
     phone: PLACEHOLDER.phone,
     phoneHref: PLACEHOLDER.phoneHref,
     whatsapp: PLACEHOLDER.whatsapp,
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Yaba+Lagos", // TODO: exact listing
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=232+Murtala+Muhammed+Way+Yaba+Lagos",
     image: yabaImg,
     alt: "Exterior of the building housing Befitting Hub Yaba in Lagos",
   },
