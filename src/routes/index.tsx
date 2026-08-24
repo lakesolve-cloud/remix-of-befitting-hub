@@ -99,10 +99,6 @@ function Index() {
       </a>
       <Header />
       <main>
-        <h1 className="sr-only">
-          Befitting Hub — professional examination centre and coworking space in Festac and Yaba,
-          Lagos
-        </h1>
         <Hero />
         <ValueProposition />
         <WhyChooseUs />
