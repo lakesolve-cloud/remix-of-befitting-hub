@@ -242,8 +242,8 @@ function Field({
 }: {
   label: string;
   id: string;
-  error?: string;
-  full?: boolean;
+  error?: string | undefined;
+  full?: boolean | undefined;
   children: React.ReactNode;
 }) {
   return (
