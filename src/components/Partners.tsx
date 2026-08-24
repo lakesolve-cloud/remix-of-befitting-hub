@@ -24,17 +24,21 @@ export function Partners() {
           </p>
         </div>
 
-        {/* Replace each tile's content with a logo <img> once assets are supplied. */}
         <ul className="reveal grid grid-cols-2 gap-5">
           {PARTNERS.map((partner) => (
             <li
               key={partner.name}
-              className="flex flex-col items-center justify-center rounded-lg border border-border bg-card px-6 py-10 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card"
+              className="flex flex-col items-center justify-center rounded-lg border border-border bg-card px-6 py-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card"
             >
-              <span className="font-display text-2xl font-bold tracking-tight text-primary">
-                {partner.name}
-              </span>
-              <span className="mt-2 text-xs text-muted-foreground">{partner.note}</span>
+              <img
+                src={partner.logo}
+                alt={partner.logoAlt}
+                width={200}
+                height={80}
+                loading="lazy"
+                className="h-16 w-auto max-w-[180px] object-contain"
+              />
+              <span className="mt-4 text-xs text-muted-foreground">{partner.note}</span>
             </li>
           ))}
         </ul>
