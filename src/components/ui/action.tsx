@@ -7,8 +7,8 @@ export const actionVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-accent text-accent-foreground shadow-card hover:brightness-95",
-        navy: "bg-primary text-primary-foreground hover:bg-primary/90",
+        primary: "bg-primary text-primary-foreground shadow-card hover:brightness-95",
+        dark: "bg-foreground text-background hover:bg-foreground/90",
         outline: "border border-border bg-card text-foreground hover:border-accent hover:text-accent",
         onDark:
           "border border-surface-foreground/25 text-surface-foreground hover:border-surface-foreground/60 hover:bg-surface-foreground/10",
