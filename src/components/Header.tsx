@@ -43,9 +43,8 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-border bg-background/90 backdrop-blur-md"
-          : "border-b border-transparent bg-background/60 backdrop-blur-sm",
+        "bg-background/95 backdrop-blur-md",
+        scrolled ? "border-b border-border shadow-card" : "border-b border-transparent",
       )}
     >
       <div className="container-hub flex h-18 items-center justify-between gap-6 py-3">

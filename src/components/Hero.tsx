@@ -23,10 +23,10 @@ export function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-surface/85 md:bg-gradient-to-r md:from-surface/95 md:via-surface/85 md:to-surface/50"
+        className="absolute inset-0 -z-10 bg-surface/75 md:bg-gradient-to-r md:from-surface/92 md:via-surface/78 md:to-surface/30"
       />
 
-      <div className="container-hub flex min-h-[86svh] flex-col justify-center py-20 md:py-28">
+      <div className="container-hub flex min-h-[88svh] max-h-[920px] flex-col justify-center py-20 md:py-28">
         <div className="max-w-3xl text-surface-foreground">
           <p className="eyebrow">A professional hub for examinations, work &amp; productivity</p>
           <h1 className="mt-5 font-display text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl">
