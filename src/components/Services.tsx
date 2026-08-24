@@ -70,7 +70,7 @@ export function Services() {
                   <ActionLink
                     href="#contact"
                     size="md"
-                    variant={i === 0 ? "primary" : "navy"}
+                    variant={i === 0 ? "primary" : "dark"}
                     onClick={() =>
                       track("book_enquire_clicked", { source: `service_${service.id}` })
                     }
