@@ -1,5 +1,5 @@
 import { ArrowDown, ClipboardCheck, Laptop, MapPin } from "lucide-react";
-import heroImg from "@/assets/hero-exam-hall.jpg";
+import { HERO_IMAGE as heroImg } from "@/data/site";
 import { ActionLink } from "@/components/ui/action";
 import { track } from "@/lib/analytics";
 
