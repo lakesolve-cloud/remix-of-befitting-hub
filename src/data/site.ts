@@ -7,6 +7,8 @@ import galleryMeeting from "@/assets/gallery-meeting.jpg";
 import galleryWorkstation from "@/assets/gallery-workstation.jpg";
 import galleryLounge from "@/assets/gallery-lounge.jpg";
 import heroImg from "@/assets/hero-exam-hall.jpg";
+import idpLogoAsset from "@/assets/idp-logo.png.asset.json";
+import ieltsLogoAsset from "@/assets/ielts-logo.png.asset.json";
 
 /**
  * Central content source. Replace placeholder values (marked TODO) with real
@@ -247,10 +249,27 @@ export const GALLERY: GalleryItem[] = [
   },
 ];
 
-export const PARTNERS = [
-  { name: "IDP", note: "Education and placement" },
-  { name: "IELTS", note: "English language testing" },
-] as const;
+export type Partner = {
+  name: string;
+  logo: string;
+  logoAlt: string;
+  note: string;
+};
+
+export const PARTNERS: Partner[] = [
+  {
+    name: "IDP",
+    logo: idpLogoAsset.url,
+    logoAlt: "IDP logo — International Education Specialists",
+    note: "Education and placement",
+  },
+  {
+    name: "IELTS",
+    logo: ieltsLogoAsset.url,
+    logoAlt: "IELTS logo — English for International Opportunity",
+    note: "English language testing",
+  },
+];
 
 export const ENQUIRY_TYPES = [
   "Examination Centre",
