@@ -28,7 +28,7 @@ export function Hero() {
 
       <div className="container-hub flex min-h-[88svh] max-h-[920px] flex-col justify-center py-20 md:py-28">
         <div className="max-w-3xl text-surface-foreground">
-          <p className="eyebrow">A professional hub for examinations, work &amp; productivity</p>
+          <p className="eyebrow !text-primary">A professional hub for examinations, work &amp; productivity</p>
           <h1 className="mt-5 font-display text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl">
             A Professional Space to Work, Test and Grow.
           </h1>

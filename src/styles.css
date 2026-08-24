@@ -6,7 +6,7 @@
 
 /*
  * Befitting Hub design system.
- * Foundation: warm professional neutrals. Primary: deep navy. Accent: copper.
+ * Foundation: warm professional neutrals. Primary: brand gold (#ffbf00). Accent: deep gold.
  * Change brand colors here only — components never hardcode colors.
  */
 
@@ -68,18 +68,18 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0.028 260);
 
-  /* Deep navy brand */
-  --primary: oklch(0.28 0.055 260);
-  --primary-foreground: oklch(0.98 0.005 90);
+  /* Brand gold #ffbf00 */
+  --primary: #ffbf00;
+  --primary-foreground: oklch(0.22 0.028 260);
 
   --secondary: oklch(0.955 0.006 90);
-  --secondary-foreground: oklch(0.28 0.055 260);
+  --secondary-foreground: oklch(0.22 0.028 260);
 
   --muted: oklch(0.955 0.006 90);
   --muted-foreground: oklch(0.5 0.018 260);
 
-  /* Copper accent */
-  --accent: oklch(0.63 0.13 48);
+  /* Deep gold accent for text, links and focus states on light backgrounds */
+  --accent: oklch(0.58 0.16 45);
   --accent-foreground: oklch(0.99 0.005 90);
 
   /* Dark surface for contrast sections */
@@ -165,7 +165,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* Scroll reveal */

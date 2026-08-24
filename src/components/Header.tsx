@@ -3,23 +3,8 @@ import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/data/site";
 import { track } from "@/lib/analytics";
 import { ActionLink } from "@/components/ui/action";
+import { Logo } from "@/components/Logo";
 import { cn } from "@/lib/utils";
-
-function Logo() {
-  return (
-    <a href="#top" className="flex items-center gap-3" aria-label="Befitting Hub — home">
-      <span className="grid h-10 w-10 place-items-center rounded-md bg-primary font-display text-base font-bold text-primary-foreground">
-        BH
-      </span>
-      <span className="leading-tight">
-        <span className="block font-display text-base font-bold tracking-tight">Befitting Hub</span>
-        <span className="block text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-          Befitting Group
-        </span>
-      </span>
-    </a>
-  );
-}
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,7 +33,7 @@ export function Header() {
       )}
     >
       <div className="container-hub flex h-18 items-center justify-between gap-6 py-3">
-        <Logo />
+        <Logo imageClassName="h-12" />
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">

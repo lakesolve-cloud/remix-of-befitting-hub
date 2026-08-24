@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { PLACEHOLDER } from "@/data/site";
+import { Logo } from "@/components/Logo";
 import { track } from "@/lib/analytics";
 
 const columns = [
@@ -41,12 +42,7 @@ export function Footer() {
       <div className="container-hub">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-md bg-primary font-display text-base font-bold text-primary-foreground">
-                BH
-              </span>
-              <span className="font-display text-base font-bold">Befitting Hub</span>
-            </div>
+            <Logo imageClassName="h-14" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               A professional hub for examinations, work and productivity — with facilities in Festac
               and Yaba, Lagos, Nigeria.
@@ -111,7 +107,8 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li>Festac &amp; Yaba, Lagos (addresses to be confirmed)</li>
+              <li>232, Murtala Muhammed Way, Yaba, Lagos, Nigeria</li>
+              <li>Festac, Lagos (address to be confirmed)</li>
             </ul>
           </div>
         </div>
