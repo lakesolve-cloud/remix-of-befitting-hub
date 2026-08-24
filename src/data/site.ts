@@ -189,7 +189,7 @@ export const LOCATIONS: Location[] = [
     whatsapp: PLACEHOLDER.whatsapp,
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Festac+Lagos", // TODO: exact listing
     image: festacImg,
-    alt: "Exterior of the building housing Befitting Hub Festac in Lagos",
+    alt: "Exterior of the Befitting Hub building in Lagos",
   },
   {
     id: "yaba",
