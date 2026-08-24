@@ -223,47 +223,58 @@ export type GalleryItem = {
 export const GALLERY: GalleryItem[] = [
   {
     src: heroImg,
-    alt: "Examination hall at Befitting Hub with rows of computer stations and privacy dividers",
+    alt: "Examination hall at Befitting Hub with numbered computer stations and privacy dividers",
     category: "Examination Centre",
     span: "wide",
   },
   {
     src: coworkImg,
-    alt: "Coworking space at Befitting Hub with shared desks and daylight",
+    alt: "Private office desk at Befitting Hub with ergonomic chairs",
     category: "Coworking Space",
   },
   {
     src: galleryWorkstation,
-    alt: "Single workstation with monitor, keyboard and desk lamp at Befitting Hub",
+    alt: "Close-up of a candidate workstation with monitor and keyboard at Befitting Hub",
     category: "Workstations",
   },
   {
     src: galleryMeeting,
-    alt: "Meeting and training room at Befitting Hub with conference table and wall screen",
+    alt: "Private desk and seating in a quiet office room at Befitting Hub",
     category: "Meeting / Training Areas",
   },
   {
     src: galleryReception,
-    alt: "Reception and waiting area at Befitting Hub",
+    alt: "Reception area at Befitting Hub with front desk and sofa seating",
     category: "Reception",
     span: "wide",
   },
   {
+    src: galleryBooths,
+    alt: "Row of numbered examination booths at Befitting Hub",
+    category: "Examination Centre",
+  },
+  {
     src: galleryLounge,
-    alt: "Shared work lounge with soft seating at Befitting Hub",
+    alt: "Waiting area at Befitting Hub with wraparound bench seating",
+    category: "Waiting Area",
+  },
+  {
+    src: galleryWaiting,
+    alt: "Candidate waiting bench along a bright corridor at Befitting Hub",
     category: "Facilities",
   },
   {
     src: festacImg,
-    alt: "Befitting Hub Festac location exterior in Lagos",
-    category: "Festac",
+    alt: "Exterior of the Befitting Hub building in Lagos",
+    category: "Our Building",
   },
   {
     src: yabaImg,
-    alt: "Befitting Hub Yaba location exterior in Lagos",
+    alt: "Reception and lounge at Befitting Hub Yaba",
     category: "Yaba",
   },
 ];
+
 
 export type Partner = {
   name: string;
