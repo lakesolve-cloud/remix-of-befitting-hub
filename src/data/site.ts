@@ -249,10 +249,27 @@ export const GALLERY: GalleryItem[] = [
   },
 ];
 
-export const PARTNERS = [
-  { name: "IDP", note: "Education and placement" },
-  { name: "IELTS", note: "English language testing" },
-] as const;
+export type Partner = {
+  name: string;
+  logo: string;
+  logoAlt: string;
+  note: string;
+};
+
+export const PARTNERS: Partner[] = [
+  {
+    name: "IDP",
+    logo: idpLogoAsset.url,
+    logoAlt: "IDP logo — International Education Specialists",
+    note: "Education and placement",
+  },
+  {
+    name: "IELTS",
+    logo: ieltsLogoAsset.url,
+    logoAlt: "IELTS logo — English for International Opportunity",
+    note: "English language testing",
+  },
+];
 
 export const ENQUIRY_TYPES = [
   "Examination Centre",
