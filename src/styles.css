@@ -69,7 +69,7 @@
   --popover-foreground: oklch(0.22 0.028 260);
 
   /* Brand gold #ffbf00 */
-  --primary: oklch(0.84567 0.34880 33.54);
+  --primary: #ffbf00;
   --primary-foreground: oklch(0.22 0.028 260);
 
   --secondary: oklch(0.955 0.006 90);
