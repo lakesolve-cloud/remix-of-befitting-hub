@@ -209,7 +209,7 @@ export const LOCATIONS: Location[] = [
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=232+Murtala+Muhammed+Way+Yaba+Lagos",
     image: yabaImg,
-    alt: "Exterior of the building housing Befitting Hub Yaba in Lagos",
+    alt: "Reception area at Befitting Hub Yaba with front desk and soft seating",
   },
 ];
 
