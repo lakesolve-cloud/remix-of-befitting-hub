@@ -1,14 +1,30 @@
-import examImg from "@/assets/service-examination.jpg";
-import coworkImg from "@/assets/service-coworking.jpg";
-import festacImg from "@/assets/location-festac.jpg";
-import yabaImg from "@/assets/location-yaba.jpg";
-import galleryReception from "@/assets/gallery-reception.jpg";
-import galleryMeeting from "@/assets/gallery-meeting.jpg";
-import galleryWorkstation from "@/assets/gallery-workstation.jpg";
-import galleryLounge from "@/assets/gallery-lounge.jpg";
-import heroImg from "@/assets/hero-exam-hall.jpg";
+import examAsset from "@/assets/service-examination.jpg.asset.json";
+import coworkAsset from "@/assets/service-coworking.jpg.asset.json";
+import festacAsset from "@/assets/location-festac.jpg.asset.json";
+import yabaAsset from "@/assets/location-yaba.jpg.asset.json";
+import galleryReceptionAsset from "@/assets/gallery-reception.jpg.asset.json";
+import galleryMeetingAsset from "@/assets/gallery-meeting.jpg.asset.json";
+import galleryWorkstationAsset from "@/assets/gallery-workstation.jpg.asset.json";
+import galleryLoungeAsset from "@/assets/gallery-lounge.jpg.asset.json";
+import galleryBoothsAsset from "@/assets/gallery-booths.jpg.asset.json";
+import galleryWaitingAsset from "@/assets/gallery-waiting.jpg.asset.json";
+import heroAsset from "@/assets/hero-exam-hall.jpg.asset.json";
 import idpLogoAsset from "@/assets/idp-logo.png.asset.json";
 import ieltsLogoAsset from "@/assets/ielts-logo.png.asset.json";
+
+const examImg = examAsset.url;
+const coworkImg = coworkAsset.url;
+const festacImg = festacAsset.url;
+const yabaImg = yabaAsset.url;
+const galleryReception = galleryReceptionAsset.url;
+const galleryMeeting = galleryMeetingAsset.url;
+const galleryWorkstation = galleryWorkstationAsset.url;
+const galleryLounge = galleryLoungeAsset.url;
+const galleryBooths = galleryBoothsAsset.url;
+const galleryWaiting = galleryWaitingAsset.url;
+export const HERO_IMAGE = heroAsset.url;
+const heroImg = HERO_IMAGE;
+
 
 /**
  * Central content source. Replace placeholder values (marked TODO) with real
@@ -134,7 +150,7 @@ export const SERVICES: Service[] = [
     ],
     cta: "Explore Coworking",
     image: coworkImg,
-    alt: "Coworking area at Befitting Hub with wood desks, ergonomic chairs and natural daylight",
+    alt: "Private office desk at Befitting Hub with ergonomic chairs and bright lighting",
   },
 ];
 
@@ -173,7 +189,7 @@ export const LOCATIONS: Location[] = [
     whatsapp: PLACEHOLDER.whatsapp,
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Festac+Lagos", // TODO: exact listing
     image: festacImg,
-    alt: "Exterior of the building housing Befitting Hub Festac in Lagos",
+    alt: "Exterior of the Befitting Hub building in Lagos",
   },
   {
     id: "yaba",
@@ -193,7 +209,7 @@ export const LOCATIONS: Location[] = [
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=232+Murtala+Muhammed+Way+Yaba+Lagos",
     image: yabaImg,
-    alt: "Exterior of the building housing Befitting Hub Yaba in Lagos",
+    alt: "Reception area at Befitting Hub Yaba with front desk and soft seating",
   },
 ];
 
@@ -207,47 +223,58 @@ export type GalleryItem = {
 export const GALLERY: GalleryItem[] = [
   {
     src: heroImg,
-    alt: "Examination hall at Befitting Hub with rows of computer stations and privacy dividers",
+    alt: "Examination hall at Befitting Hub with numbered computer stations and privacy dividers",
     category: "Examination Centre",
     span: "wide",
   },
   {
     src: coworkImg,
-    alt: "Coworking space at Befitting Hub with shared desks and daylight",
+    alt: "Private office desk at Befitting Hub with ergonomic chairs",
     category: "Coworking Space",
   },
   {
     src: galleryWorkstation,
-    alt: "Single workstation with monitor, keyboard and desk lamp at Befitting Hub",
+    alt: "Close-up of a candidate workstation with monitor and keyboard at Befitting Hub",
     category: "Workstations",
   },
   {
     src: galleryMeeting,
-    alt: "Meeting and training room at Befitting Hub with conference table and wall screen",
+    alt: "Private desk and seating in a quiet office room at Befitting Hub",
     category: "Meeting / Training Areas",
   },
   {
     src: galleryReception,
-    alt: "Reception and waiting area at Befitting Hub",
+    alt: "Reception area at Befitting Hub with front desk and sofa seating",
     category: "Reception",
     span: "wide",
   },
   {
+    src: galleryBooths,
+    alt: "Row of numbered examination booths at Befitting Hub",
+    category: "Examination Centre",
+  },
+  {
     src: galleryLounge,
-    alt: "Shared work lounge with soft seating at Befitting Hub",
+    alt: "Waiting area at Befitting Hub with wraparound bench seating",
+    category: "Waiting Area",
+  },
+  {
+    src: galleryWaiting,
+    alt: "Candidate waiting bench along a bright corridor at Befitting Hub",
     category: "Facilities",
   },
   {
     src: festacImg,
-    alt: "Befitting Hub Festac location exterior in Lagos",
-    category: "Festac",
+    alt: "Exterior of the Befitting Hub building in Lagos",
+    category: "Our Building",
   },
   {
     src: yabaImg,
-    alt: "Befitting Hub Yaba location exterior in Lagos",
+    alt: "Reception and lounge at Befitting Hub Yaba",
     category: "Yaba",
   },
 ];
+
 
 export type Partner = {
   name: string;
