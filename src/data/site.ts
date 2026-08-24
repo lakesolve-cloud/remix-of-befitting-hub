@@ -1,14 +1,30 @@
-import examImg from "@/assets/service-examination.jpg";
-import coworkImg from "@/assets/service-coworking.jpg";
-import festacImg from "@/assets/location-festac.jpg";
-import yabaImg from "@/assets/location-yaba.jpg";
-import galleryReception from "@/assets/gallery-reception.jpg";
-import galleryMeeting from "@/assets/gallery-meeting.jpg";
-import galleryWorkstation from "@/assets/gallery-workstation.jpg";
-import galleryLounge from "@/assets/gallery-lounge.jpg";
-import heroImg from "@/assets/hero-exam-hall.jpg";
+import examAsset from "@/assets/service-examination.jpg.asset.json";
+import coworkAsset from "@/assets/service-coworking.jpg.asset.json";
+import festacAsset from "@/assets/location-festac.jpg.asset.json";
+import yabaAsset from "@/assets/location-yaba.jpg.asset.json";
+import galleryReceptionAsset from "@/assets/gallery-reception.jpg.asset.json";
+import galleryMeetingAsset from "@/assets/gallery-meeting.jpg.asset.json";
+import galleryWorkstationAsset from "@/assets/gallery-workstation.jpg.asset.json";
+import galleryLoungeAsset from "@/assets/gallery-lounge.jpg.asset.json";
+import galleryBoothsAsset from "@/assets/gallery-booths.jpg.asset.json";
+import galleryWaitingAsset from "@/assets/gallery-waiting.jpg.asset.json";
+import heroAsset from "@/assets/hero-exam-hall.jpg.asset.json";
 import idpLogoAsset from "@/assets/idp-logo.png.asset.json";
 import ieltsLogoAsset from "@/assets/ielts-logo.png.asset.json";
+
+const examImg = examAsset.url;
+const coworkImg = coworkAsset.url;
+const festacImg = festacAsset.url;
+const yabaImg = yabaAsset.url;
+const galleryReception = galleryReceptionAsset.url;
+const galleryMeeting = galleryMeetingAsset.url;
+const galleryWorkstation = galleryWorkstationAsset.url;
+const galleryLounge = galleryLoungeAsset.url;
+const galleryBooths = galleryBoothsAsset.url;
+const galleryWaiting = galleryWaitingAsset.url;
+export const HERO_IMAGE = heroAsset.url;
+const heroImg = HERO_IMAGE;
+
 
 /**
  * Central content source. Replace placeholder values (marked TODO) with real
