@@ -14,7 +14,7 @@ export function Hero() {
     <section id="top" className="relative isolate overflow-hidden bg-surface pt-18">
       <img
         src={heroImg}
-        alt="Examination hall at Befitting Hub with rows of computer workstations and privacy dividers"
+        alt="Examination hall at Befitting Hub with numbered computer workstations and privacy dividers"
         width={1920}
         height={1200}
         fetchPriority="high"
