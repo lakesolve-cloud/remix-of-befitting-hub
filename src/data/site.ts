@@ -1,30 +1,16 @@
-import examAsset from "@/assets/service-examination.jpg.asset.json";
-import coworkAsset from "@/assets/service-coworking.jpg.asset.json";
-import festacAsset from "@/assets/location-festac.jpg.asset.json";
-import yabaAsset from "@/assets/location-yaba.jpg.asset.json";
-import galleryReceptionAsset from "@/assets/gallery-reception.jpg.asset.json";
-import galleryMeetingAsset from "@/assets/gallery-meeting.jpg.asset.json";
-import galleryWorkstationAsset from "@/assets/gallery-workstation.jpg.asset.json";
-import galleryLoungeAsset from "@/assets/gallery-lounge.jpg.asset.json";
-import galleryBoothsAsset from "@/assets/gallery-booths.jpg.asset.json";
-import galleryWaitingAsset from "@/assets/gallery-waiting.jpg.asset.json";
-import heroAsset from "@/assets/hero-exam-hall.jpg.asset.json";
-import idpLogoAsset from "@/assets/idp-logo.png.asset.json";
-import ieltsLogoAsset from "@/assets/ielts-logo.png.asset.json";
+const examImg = "/images/service-examination.jpeg";
+const coworkImg = "/images/service-coworking.jpeg";
+const festacImg = "/images/location-festac.jpeg";
+const yabaImg = "/images/location-yaba.jpeg";
+const galleryReception = "/images/gallery-reception.jpeg";
+const galleryMeeting = "/images/gallery-meeting.jpeg";
+const galleryWorkstation = "/images/gallery-workstation.jpeg";
+const galleryLounge = "/images/gallery-lounge.jpeg";
+const galleryBooths = "/images/gallery-booths.jpeg";
+const galleryWaiting = "/images/gallery-waiting.jpeg";
 
-const examImg = examAsset.url;
-const coworkImg = coworkAsset.url;
-const festacImg = festacAsset.url;
-const yabaImg = yabaAsset.url;
-const galleryReception = galleryReceptionAsset.url;
-const galleryMeeting = galleryMeetingAsset.url;
-const galleryWorkstation = galleryWorkstationAsset.url;
-const galleryLounge = galleryLoungeAsset.url;
-const galleryBooths = galleryBoothsAsset.url;
-const galleryWaiting = galleryWaitingAsset.url;
-export const HERO_IMAGE = heroAsset.url;
+export const HERO_IMAGE = "/images/hero-exam-hall.jpeg";
 const heroImg = HERO_IMAGE;
-
 
 /**
  * Central content source. Replace placeholder values (marked TODO) with real
@@ -187,7 +173,8 @@ export const LOCATIONS: Location[] = [
     phone: PLACEHOLDER.phone,
     phoneHref: PLACEHOLDER.phoneHref,
     whatsapp: PLACEHOLDER.whatsapp,
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Festac+Lagos", // TODO: exact listing
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=Festac+Lagos", // TODO: exact listing
     image: festacImg,
     alt: "Exterior of the Befitting Hub building in Lagos",
   },
@@ -275,7 +262,6 @@ export const GALLERY: GalleryItem[] = [
   },
 ];
 
-
 export type Partner = {
   name: string;
   logo: string;
@@ -286,13 +272,13 @@ export type Partner = {
 export const PARTNERS: Partner[] = [
   {
     name: "IDP",
-    logo: idpLogoAsset.url,
+    logo: "/images/idp-logo.png",
     logoAlt: "IDP logo — International Education Specialists",
     note: "Education and placement",
   },
   {
     name: "IELTS",
-    logo: ieltsLogoAsset.url,
+    logo: "/images/ielts-logo.png",
     logoAlt: "IELTS logo — English for International Opportunity",
     note: "English language testing",
   },
