@@ -1,5 +1,5 @@
 import { useRef, useState, type FormEvent } from "react";
-import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, Mail, MessageCircle, Phone } from "lucide-react";
 import { ENQUIRY_TYPES, LOCATION_OPTIONS, PLACEHOLDER } from "@/data/site";
 import { ActionButton, ActionLink } from "@/components/ui/action";
 import { track } from "@/lib/analytics";
@@ -38,6 +38,19 @@ function validate(v: Values) {
   return errors;
 }
 
+function buildMailto(values: Values) {
+  const subject = `Enquiry from ${values.name} — ${values.enquiryType}`;
+  const body = `Name: ${values.name}
+Email: ${values.email}
+Phone: ${values.phone}
+Enquiry Type: ${values.enquiryType}
+Preferred Location: ${values.location}
+
+Message:
+${values.message}`;
+  return `mailto:${PLACEHOLDER.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
 export function EnquiryForm() {
   const [values, setValues] = useState<Values>(EMPTY);
   const [errors, setErrors] = useState<Partial<Record<keyof Values, string>>>({});
@@ -53,7 +66,6 @@ export function EnquiryForm() {
     setErrors((prev) => ({ ...prev, [key]: undefined }));
   };
 
-  // Wire this to an email service or server function later.
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     const found = validate(values);
@@ -66,6 +78,11 @@ export function EnquiryForm() {
     });
     if (values.enquiryType === "Examination Centre") track("examination_enquiry_submitted");
     if (values.enquiryType === "Coworking Space") track("coworking_enquiry_submitted");
+
+    // Open the user's email client with a pre-filled enquiry to info@befittinghub.com.
+    if (typeof window !== "undefined") {
+      window.location.href = buildMailto(values);
+    }
 
     setSent(true);
     setValues(EMPTY);
@@ -106,6 +123,14 @@ export function EnquiryForm() {
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               WhatsApp Us
             </ActionLink>
+            <ActionLink
+              href={`mailto:${PLACEHOLDER.email}`}
+              variant="onDark"
+              onClick={() => track("email_clicked", { source: "enquiry" })}
+            >
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              Email Us
+            </ActionLink>
           </div>
 
           <p className="mt-8 text-xs text-surface-foreground/60">
@@ -119,7 +144,8 @@ export function EnquiryForm() {
               <CheckCircle2 className="h-10 w-10 text-accent" aria-hidden="true" />
               <h3 className="font-display text-xl font-semibold">Enquiry received</h3>
               <p className="text-surface-foreground/80">
-                Thank you for contacting Befitting Hub. Our team will get back to you shortly.
+                Thank you for contacting Befitting Hub. We've opened your email app so you can send
+                the enquiry directly to {PLACEHOLDER.email}. Our team will get back to you shortly.
               </p>
               <ActionButton variant="onDark" onClick={() => setSent(false)}>
                 Send another enquiry
