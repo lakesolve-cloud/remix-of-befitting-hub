@@ -134,7 +134,7 @@ export function EnquiryForm() {
           </div>
 
           <p className="mt-8 text-xs text-surface-foreground/60">
-            Contact details are placeholders pending confirmation.
+            Email us at {PLACEHOLDER.email}. Phone and WhatsApp numbers are placeholders pending confirmation.
           </p>
         </div>
 
