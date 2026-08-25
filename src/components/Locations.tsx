@@ -136,7 +136,7 @@ export function Locations() {
         </div>
 
         <p className="mt-8 text-xs text-muted-foreground">
-          Addresses, opening hours and contact details shown are placeholders pending confirmation.
+          The Yaba address is confirmed. Festac address, opening hours and phone numbers are placeholders pending confirmation.
         </p>
       </div>
     </section>
