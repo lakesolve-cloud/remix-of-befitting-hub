@@ -21,7 +21,7 @@ export const PLACEHOLDER = {
   phone: "+234 000 000 0000", // TODO: real phone number
   phoneHref: "tel:+2340000000000", // TODO
   whatsapp: "https://wa.me/2340000000000", // TODO
-  email: "hello@befittinghub.com", // TODO
+  email: "info@befittinghub.com",
 } as const;
 
 export const NAV_LINKS = [
