@@ -18,7 +18,7 @@ export function Services() {
             What We Do
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Two core services under one roof — professional examination facilities and flexible
+            Two core services under one roof: professional examination facilities and flexible
             workspace.
           </p>
         </div>
