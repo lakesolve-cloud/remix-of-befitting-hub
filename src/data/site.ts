@@ -272,13 +272,13 @@ export type Partner = {
 export const PARTNERS: Partner[] = [
   {
     name: "IDP",
-    logo: "/images/idp-logo.png",
+    logo: "/images/idp-logo.jpeg",
     logoAlt: "IDP logo — International Education Specialists",
     note: "Education and placement",
   },
   {
     name: "IELTS",
-    logo: "/images/ielts-logo.png",
+    logo: "/images/ielts-logo.jpeg",
     logoAlt: "IELTS logo — English for International Opportunity",
     note: "English language testing",
   },
