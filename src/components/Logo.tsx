@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/befitting-hub-logo.png.asset.json";
+const logoImg = "/images/befitting-hub-logo.jpeg";;
 
 interface LogoProps {
   className?: string;
