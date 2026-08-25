@@ -1,3 +1,5 @@
+import logoAsset from "@/assets/befitting-hub-logo.png.asset.json";
+
 interface LogoProps {
   className?: string;
   imageClassName?: string;
@@ -16,7 +18,7 @@ export function Logo({
       aria-label="Befitting Hub — home"
     >
       <img
-        src="/images/befitting-hub-logo.jpeg"
+        src={logoAsset.url}
         alt="Befitting Hub"
         className={`h-10 w-auto object-contain ${imageClassName}`}
         width="auto"

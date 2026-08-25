@@ -43,6 +43,7 @@ export const Route = createFileRoute("/")({
           description: DESCRIPTION,
           areaServed: "Lagos, Nigeria",
           url: "/",
+          email: "info@befittinghub.com",
           location: [
             {
               "@type": "Place",

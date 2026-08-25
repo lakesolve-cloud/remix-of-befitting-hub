@@ -12,6 +12,7 @@ export type AnalyticsEvent =
   | "contact_form_submitted"
   | "phone_clicked"
   | "whatsapp_clicked"
+  | "email_clicked"
   | "directions_clicked"
   | "book_enquire_clicked"
   | "coworking_enquiry_submitted"
