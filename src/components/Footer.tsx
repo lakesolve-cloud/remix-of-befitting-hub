@@ -31,9 +31,9 @@ const columns = [
 ];
 
 const socials = [
-  { label: "Instagram", icon: Instagram, href: "#" },
+  { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/befitting_hub?igsi=dnd5cnBuZzJhczNw" },
   { label: "Facebook", icon: Facebook, href: "#" },
-  { label: "LinkedIn", icon: Linkedin, href: "#" },
+  { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/befitting-hub/" },
 ];
 
 export function Footer() {
