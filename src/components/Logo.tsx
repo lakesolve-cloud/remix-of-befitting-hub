@@ -1,4 +1,4 @@
-const logoImg = "/images/befitting-hub-logo.jpeg";;
+const logoImg = "/images/befitting-hub-logo.jpeg";
 
 interface LogoProps {
   className?: string;
