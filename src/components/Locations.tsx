@@ -1,4 +1,5 @@
-import { Clock, MapPin, MessageCircle, Navigation, Phone, Sparkles } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Navigation, Phone, Sparkles } from "lucide-react";
+import { PLACEHOLDER } from "@/data/site";
 import { LOCATIONS } from "@/data/site";
 import { useReveal, useInViewOnce } from "@/hooks/use-reveal";
 import { ActionLink } from "@/components/ui/action";
@@ -99,6 +100,14 @@ export function Locations() {
                     >
                       <MessageCircle className="h-4 w-4 text-accent" aria-hidden="true" />
                       WhatsApp
+                    </a>
+                    <a
+                      href={`mailto:${PLACEHOLDER.email}`}
+                      onClick={() => track("email_clicked", { location: loc.id })}
+                      className="inline-flex items-center gap-2 font-medium hover:text-accent"
+                    >
+                      <Mail className="h-4 w-4 text-accent" aria-hidden="true" />
+                      {PLACEHOLDER.email}
                     </a>
                   </div>
                 </dl>
