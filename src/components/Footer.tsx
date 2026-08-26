@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Tiktok } from "lucide-react";
 import { PLACEHOLDER } from "@/data/site";
 import { Logo } from "@/components/Logo";
 import { track } from "@/lib/analytics";
@@ -32,7 +32,7 @@ const columns = [
 
 const socials = [
   { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/befitting_hub?igsi=dnd5cnBuZzJhczNw" },
-  { label: "Facebook", icon: Facebook, href: "#" },
+  { label: "TikTok", icon: Tiktok, href: "#" },
   { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/befitting-hub/" },
 ];
 
