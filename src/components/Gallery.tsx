@@ -73,7 +73,7 @@ export function Gallery() {
                   aria-hidden="true"
                   className="absolute inset-0 bg-surface/0 transition-colors duration-300 group-hover:bg-surface/25"
                 />
-                <span className="absolute bottom-3 left-3 rounded-sm bg-background/90 px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-[0.12em] text-primary">
+                <span className="absolute bottom-3 left-3 rounded-sm bg-background/90 px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-[0.12em] text-foreground">
                   {item.category}
                 </span>
               </button>
