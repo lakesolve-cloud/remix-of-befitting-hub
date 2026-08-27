@@ -163,7 +163,7 @@ export const LOCATIONS: Location[] = [
     name: "Befitting Hub Festac",
     city: "Festac, Lagos",
     address: "Address to be confirmed — Festac, Lagos, Nigeria", // TODO
-    hours: "Opening hours to be confirmed", // TODO
+    hours: "8 am - 6 pm", // TODO
     services: ["Examination centre", "Coworking space", "Meeting areas"],
     highlights: [
       "Facility highlights to be confirmed",
@@ -183,7 +183,7 @@ export const LOCATIONS: Location[] = [
     name: "Befitting Hub Yaba",
     city: "Yaba, Lagos",
     address: "232, Murtala Muhammed Way, Yaba, Lagos, Nigeria",
-    hours: "Opening hours to be confirmed", // TODO
+    hours: "8 am - 6 pm", // TODO
     services: ["Examination centre", "Coworking space", "Training areas"],
     highlights: [
       "Facility highlights to be confirmed",
