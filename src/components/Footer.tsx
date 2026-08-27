@@ -46,7 +46,7 @@ const columns = [
 
 const socials = [
   { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/befitting_hub?igsi=dnd5cnBuZzJhczNw" },
-  { label: "TikTok", icon: TiktokIcon, href: "#" },
+  { label: "TikTok", icon: TiktokIcon, href: "https://www.tiktok.com/@befitting.hub?_r=1&_t=ZS-99CV8wrZGkv" },
   { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/befitting-hub/" },
 ];
 
