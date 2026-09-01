@@ -133,12 +133,6 @@ export function Locations() {
               </div>
             </article>
           ))}
-        </div>
-
-        <p className="mt-8 text-xs text-muted-foreground">
-          The Yaba address is confirmed. Festac address, opening hours and phone numbers are placeholders pending confirmation.
-        </p>
-      </div>
     </section>
   );
 }
