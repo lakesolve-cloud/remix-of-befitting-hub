@@ -8,6 +8,7 @@ const galleryWorkstation = "/images/gallery-workstation.jpeg";
 const galleryLounge = "/images/gallery-lounge.jpeg";
 const galleryBooths = "/images/gallery-booths.jpeg";
 const galleryWaiting = "/images/gallery-waiting.jpeg";
+const buildingImg = "/images/location-yaba2.jpeg";
 
 export const HERO_IMAGE = "/images/hero-exam-hall.jpeg";
 const heroImg = HERO_IMAGE;
@@ -251,7 +252,7 @@ export const GALLERY: GalleryItem[] = [
     category: "Facilities",
   },
   {
-    src: festacImg,
+    src: buildingImg,
     alt: "Exterior of the Befitting Hub building in Lagos",
     category: "Our Building",
   },
